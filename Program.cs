@@ -34,7 +34,7 @@ namespace bulkinsertbug
             var person_NoBug = db.Set<Person_NoBug>().First();
             var person_Bug = db.Set<Person_Bug>().First();
 
-            if (person_NoBug.Name == null) throw new InvalidOperationException(nameof(Person_Bug));
+            if (person_NoBug.Name == null) throw new InvalidOperationException(nameof(Person_NoBug));
             if (person_Bug.BasicInfo.Name == null) throw new InvalidOperationException(nameof(Person_Bug));
         }
     }
